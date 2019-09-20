@@ -73,6 +73,10 @@ input:focus, button:focus {
   max-width: 400px;
 }
 
+.launch{
+  margin-bottom: 50px;
+}
+
 a{
   color: var(--main-light);
 }
