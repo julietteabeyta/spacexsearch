@@ -1,22 +1,78 @@
-.App {
-  text-align: center;
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  --main-dark: #0e1111;
+  --main-light: #fbfbf8;
+  --main-accent: #ff0108;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.form{
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 50px 0 100px;
+}
+
+.field{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px;
+  transition: border .2s ease;
+  border: 1px solid;
+  color: var(--main-light);
+  border-color: var(--main-accent);
+  border-radius: 8px;
+  background: var(--main-dark);
+  margin-bottom: 25px;
+}
+
+input, button {
+  border:none;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 32px;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#submitbutton{
+  border: 1px solid var(--main-light);
+  border-radius: 8px;
+  background: var(--main-light);
+}
+
+#clearbutton{
+  border: 1px solid var(--main-light);
+  border-radius: 8px;
+  color: var(--main-light);
+  background: var(--main-dark);
+}
+
+input:focus, button:focus {
+  outline:0;
+}
+
+.row{
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  max-width: 400px;
+}
+
+a{
+  color: var(--main-light);
 }
