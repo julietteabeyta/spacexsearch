@@ -37,9 +37,20 @@ const Launches = (props) => (
       return (
         <div className="row">
           {data.launches.length ? (
-            data.launches.map((launch, index) => (
-              <Mission key={index} launch={launch} />
-            ))
+            <div>
+              {data.launches.length === 1 ? 
+                <p className="result-metadata">
+                  {data.launches.length} Mission Found
+                </p>
+                :
+                <p className="result-metadata">
+                  {data.launches.length} Missions Found
+                </p>
+              }
+              {data.launches.map((launch, index) => (
+                <Mission key={index} launch={launch} />
+              ))}
+            </div>
           ) : (
             <p>Whoops! No launches found for this search!</p>
           )}

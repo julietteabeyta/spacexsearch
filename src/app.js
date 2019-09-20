@@ -39,6 +39,9 @@ class App extends React.Component {
           </label>
           <input
             className="field"
+            onKeyDown={(e)=>{if(e.keyCode === 13){
+              this.search();
+            }}}
             type="text"
             name="missionname"
             placeholder="COTS 1"
@@ -49,6 +52,9 @@ class App extends React.Component {
           </label>
           <input
             className="field"
+            onKeyDown={(e)=>{if(e.keyCode === 13){
+              this.search();
+            }}}
             type="text"
             name="rocketname"
             placeholder="Falcon 9"
@@ -59,6 +65,9 @@ class App extends React.Component {
           </label>
           <input
             className="field"
+            onKeyDown={(e)=>{if(e.keyCode === 13){
+              this.search();
+            }}}
             type="text"
             name="launchyear"
             placeholder="2012"

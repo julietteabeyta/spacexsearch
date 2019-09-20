@@ -1,9 +1,13 @@
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
-  --main-dark: #0e1111;
-  --main-light: #fbfbf8;
-  --main-accent: #ff0108;
+  --main-dark-color: #0e1111;
+  --main-light-color: #fbfbf8;
+  --main-accent-color: #ff0108;
+}
+
+a{
+  color: var(--main-light-color);
 }
 
 .app-container{
@@ -26,10 +30,10 @@
   padding: 15px;
   transition: border .2s ease;
   border: 1px solid;
-  color: var(--main-light);
-  border-color: var(--main-accent);
+  color: var(--main-light-color);
+  border-color: var(--main-accent-color);
   border-radius: 8px;
-  background: var(--main-dark);
+  background: var(--main-dark-color);
   margin-bottom: 25px;
 }
 
@@ -51,16 +55,16 @@ button{
 }
 
 #submitbutton{
-  border: 1px solid var(--main-light);
+  border: 1px solid var(--main-light-color);
   border-radius: 8px;
-  background: var(--main-light);
+  background: var(--main-light-color);
 }
 
 #clearbutton{
-  border: 1px solid var(--main-light);
+  border: 1px solid var(--main-light-color);
   border-radius: 8px;
-  color: var(--main-light);
-  background: var(--main-dark);
+  color: var(--main-light-color);
+  background: var(--main-dark-color);
 }
 
 input:focus, button:focus {
@@ -73,10 +77,45 @@ input:focus, button:focus {
   max-width: 400px;
 }
 
-.launch{
+.result-metadata{
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
   margin-bottom: 50px;
 }
 
-a{
-  color: var(--main-light);
+.launch{
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0 10px;
+  align-content: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.launch::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--main-light-color);
+  position: absolute;
+  bottom: 0;
+}
+
+.launch-video{
+  height: 75px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-accent-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.launch-video img{
+  height: 25px;
+  margin-bottom: 10px
 }
