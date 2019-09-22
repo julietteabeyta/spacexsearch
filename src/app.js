@@ -32,7 +32,7 @@ class App extends React.Component {
 
     const searchResults = (
       <ApolloProvider client={client}>
-        <div className="container">
+        <div className="result-container">
           <Missions
             missionname={missionname}
             rocketname={rocketname}

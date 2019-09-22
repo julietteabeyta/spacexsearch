@@ -12,6 +12,8 @@ a{
 
 .app-container{
   display: flex;
+  width: 300px;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
 }
@@ -20,8 +22,8 @@ a{
   font-family: "Inconsolata", monospace;
   display: flex;
   flex-direction: column;
-  width: 400px;
-  margin: 50px 0 100px;
+  width: 300px;
+  margin: 25px 0;
 }
 
 .field{
@@ -35,6 +37,10 @@ a{
   border-radius: 8px;
   background: var(--main-dark-color);
   margin-bottom: 25px;
+}
+
+.result-container{
+  margin-top: 25px;
 }
 
 input, button {
@@ -118,4 +124,14 @@ input:focus, button:focus {
 .launch-video img{
   height: 25px;
   margin-bottom: 10px
+}
+
+@media only screen and (min-width: 450px){
+  .app-container{
+    width:auto;
+  }
+  .form{
+    width: 400px;
+    margin: 50px 0;
+  }
 }
