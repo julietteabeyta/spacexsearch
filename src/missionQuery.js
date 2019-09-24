@@ -42,11 +42,11 @@ const Launches = props => (
             <div>
               {data.launches.length === 1 ? (
                 <p className="result-metadata">
-                  {data.launches.length} Mission Found
+                  {data.launches.length} Launch Found
                 </p>
               ) : (
                 <p className="result-metadata">
-                  {data.launches.length} Missions Found
+                  {data.launches.length} Launches Found
                 </p>
               )}
               {data.launches.map((launch, index) => (
